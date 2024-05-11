@@ -2,14 +2,41 @@
 Insert into a Linked List <Example>
 
 class Listnode(object):
-  def __init__ (self, x)
-    self.value=x
-    self.next = None                 - This initiates the constructor for the class then declares self.value to equal x and
-                                        self.next is created and set equal to None
+  def __init__ (self, x)              - This initiates the constructor for the class then declares self.value to equal x and
+    self.value=x                                        self.next is created and set equal to None
+    self.next = None
 
 
 def solution(head:Listnode, value:int, index:int) -> Listnode:
-  if head is None:
-    head = Listnode
-'''
+  if head is None:               --- what this is doing is creating a new node at the head of the list if head is equal to None
+    head = Listnode(value)        --- can also be written as;  return Listnode(value) --- both will give the same result
+    return head
 
+  if index <= 0:                           --- This if statement is checking if the index is below zero from the start. If this is
+    newNode = Listnode(value)                   the case a new node (newNode) will be created with the given value and set as the new 
+    newNode.next = head                          head of the index.
+    return newNode
+
+  count = 0
+  cur = head      --- initiating a count and setting the current node (cur) to head (front of the Linked List)
+
+* What we want to do is; iterate until we get to index - 1 or the next property is null (we've reached the end of the list)
+  while count < index - 1 and cur.next is not None:
+    count += 1
+    cur = cur.next           --- while the count is less than (index - 1) and cur.next (next node) is not None (if its not the end of the list)
+                                  the current node (cur) equals cur.next (the next node in the linked list following the previous node (cur)
+
+*Now we're going to:
+  - insert our node into the main case
+  - make the previous node's next point to the new node
+  - make the new node's next point to the current node
+
+  prev = cur
+  cur = cur.next
+  prev.next = Listnode(value)
+
+  if cur is not None:
+    prev.next.next = cur        --- This is first checking if cur is not equal to None. If it is not - the Listnode(value) is set to a node following prev
+
+  return head        --- we return head at the end to gather everything into one value - head (where we placed (cur = head) in the code above
+'''
