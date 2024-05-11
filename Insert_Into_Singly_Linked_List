@@ -1,0 +1,15 @@
+'''
+Insert into a Linked List <Example>
+
+class Listnode(object):
+  def __init__ (self, x)
+    self.value=x
+    self.next = None                 - This initiates the constructor for the class then declares self.value to equal x and
+                                        self.next is created and set equal to None
+
+
+def solution(head:Listnode, value:int, index:int) -> Listnode:
+  if head is None:
+    head = Listnode
+'''
+
