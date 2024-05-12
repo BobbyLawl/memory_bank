@@ -1,0 +1,12 @@
+Binary Trees consist of nodes that are linked and begin with a single root node. This node then branches into two mode nodes;       <the root node in a binary tree is akin to the heda of a linked list>
+                                                                                                                                  <It's called a Binary Tree because each node can point to two other nodes>
+  the nodes that "branch off" from the root are "branch nodes" and the nodes at the end of these branches are called Leaf Nodes.
+
+VARIANT - Binary Search Tree:
+  This is a Binary Tree with additional requirements(aka Rules);  All nodes LEFT of a node must have smaller values.  All Nodes RIGHT of a node msut have larger values.
+  This is an O(log n) to search;
+        Example: We have a phone book and were searching for the name Smith - We open the book to the P section and decide... Smith is on the right side, so we drop the left half of the data
+                                                                                  at that point. Then we open it again - to the T section, This time we can throw away everything to the right
+                                                                                  because we know S comes before T.    
+                                                                                                                      - This is a powerful and quick way to search compared to O(n)
+                                                                                                                      
