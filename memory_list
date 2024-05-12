@@ -6,3 +6,5 @@ Linked_Lists - This branch contains various ways to access what you need from a 
 Recursion - This branch deals with information on how to use recursive solutions to find what you need from linked lists
              recursion is using a function within itself to achive a goal
 
+Modeling - This branch will portray various types of models, examples, and how to use them most effectively
+            Models to Date: Binary Trees
