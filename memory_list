@@ -1,10 +1,2 @@
 This is where I will be updating the list of contents within this file and what they're used for.
-
-Linked_Lists - This branch contains various ways to access what you need from a linked list, with a focus on adding,
-                removing, searching, working with pointer adjustment, prev and current node tracking and initialization
-
-Recursion - This branch deals with information on how to use recursive solutions to find what you need from linked lists
-             recursion is using a function within itself to achive a goal
-
-Modeling - This branch will portray various types of models, examples, and how to use them most effectively
-            Models to Date: Binary Trees
+Consider using co-pilot
