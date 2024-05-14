@@ -39,4 +39,7 @@ def solution(head:Listnode, value:int, index:int) -> Listnode:
     prev.next.next = cur        --- This is first checking if cur is not equal to None. If it is not - the Listnode(value) is set to a node following prev
 
   return head        --- we return head at the end to gather everything into one value - head (where we placed (cur = head) in the code above
+
+
+THIS HAS A GOOD CHANCE OF SHOWING UP ON THE GCA **
 '''
