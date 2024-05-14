@@ -10,3 +10,4 @@ VARIANT - Binary Search Tree:
                                                                                   because we know S comes before T.    
                                                                                                                       - This is a powerful and quick way to search compared to O(n)
                                                                                                                       
+** Focus on all types of modeling for GCA **
