@@ -1,4 +1,6 @@
-Binary Trees consist of nodes that are linked and begin with a single root node. This node then branches into two mode nodes;       <the root node in a binary tree is akin to the heda of a linked list>
+BINARY SEARCH TREES I - Binary Tree Iterative Search
+--------------------------------------------------
+Binary Trees consist of nodes that are linked and begin with a single root node. This node then branches into two mode nodes;       <the root node in a binary tree is akin to the head of a linked list>
                                                                                                                                   <It's called a Binary Tree because each node can point to two other nodes>
   the nodes that "branch off" from the root are "branch nodes" and the nodes at the end of these branches are called Leaf Nodes.
 
@@ -10,4 +12,16 @@ VARIANT - Binary Search Tree:
                                                                                   because we know S comes before T.    
                                                                                                                       - This is a powerful and quick way to search compared to O(n)
                                                                                                                       
-** Focus on all types of modeling for GCA **
+
+
+BINARY SEARCH TREES II - Binary Tree Recursive Search
+---------------------------------------------------
+How it works:
+- Start by comparing the calue at the root with what we're searching for, then:
+- If the value is less than root's value:
+  - Recursively search the left BST
+Else:
+  -Recursively search the right BST
+- When you find the node, return True
+-If you do not find the node and fall off the end of the BST, return False
+                                                                              **Each call return the result of its recursive**
