@@ -1,1 +1,43 @@
 recursion review / notes
+
+'''
+Recursion is: a function calling itself to get work done.
+- where there is a loop, theres an opportunity for a recursive solution - 
+
+You must be able to define the problem recursively - usint iteslf in its own definition
+Identify that the problem is made up of identically-defined smaller subproblems - this is a good time to use recursion
+Look for patterns -  
+Example:  Looping a print  
+print(5,4,3,2,1), 
+print (4,3,2,1), 
+print (3,2,1) - we see the same items in each iteration cotained within the first print
+
+If print number 1 was called "n" then print number two would just be (n - 1)
+Printing values from n down is just like printing the value of n, then printing the caluse from (n - 1) down.  [(n - 2) , (n - 3)]
+
+Pseudocode example:
+
+function print_vals(n):
+  print(n)
+  print_vals(n-1)   - at this point an infinite loop is created
+we must first use a Base Case to check for an infinite loop:
+  if (n <= 0):
+    return
+
+the final psuedocode would look like this:
+
+function print_vals(n):
+  if (n <= 0):
+    return       - this cuts off the recurion loop when n becomes 0 or starts as a negative number
+  print(n)
+  print_vals(n-1)
+
+this could also be written as:
+
+function print_vals(n):
+  if(n > 0):
+    print(n)
+    print_vals(n-1)   - this function would also break an infinite loop because it only loops if (n) is greater than 0
+
+
+'''
